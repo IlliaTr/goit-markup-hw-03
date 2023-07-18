@@ -32,10 +32,6 @@ body {
 
 /* Header */
 
-.header {
-  background-color: var(--white);
-}
-
 .header-logo {
   color: var(--iris);
   font-family: var(--secondary-font);
