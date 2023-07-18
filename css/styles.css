@@ -144,8 +144,12 @@ body {
   color: var(--navyblue);
 }
 
-.team-card {
+.end-body {
   background-color: var(--cloud);
+}
+
+.team-card {
+  background-color: var(--white);
 }
 
 /* Footer */
@@ -170,6 +174,8 @@ body {
 
 .footer-text {
   color: var(--cloud);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* Portfolio Page */
