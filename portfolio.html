@@ -16,15 +16,17 @@
   <body>
     <header class="header">
       <nav class="header-navigation">
-        <a class="header-logo link" href="./index.html">
-          <span class="header-logo-accent">Web</span>Studio</a
+        <a class="header-logo link" href="./index.html"
+          >Web <span class="header-logo-accent">Studio</span></a
         >
         <ul class="header-menu list">
           <li class="header-menu-item">
             <a class="header-menu-link link" href="">Studio</a>
           </li>
           <li class="header-menu-item">
-            <a class="header-menu-link link" href="">Portfolio</a>
+            <a class="header-menu-link link" href="./portfolio.html"
+              >Portfolio</a
+            >
           </li>
           <li class="header-menu-item">
             <a class="header-menu-link link" href="">Contacts</a>
@@ -34,91 +36,95 @@
       <address class="header-address">
         <ul class="header-address-items list">
           <li class="header-address-email">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="header-address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li class="header-address-tel">
-            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="header-address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </address>
     </header>
 
     <main>
-      <section class="filter">
-        <button class="filter-button">All</button>
-        <button class="filter-button">Web Site</button>
-        <button class="filter-button">App</button>
-        <button class="filter-button">Design</button>
-        <button class="filter-button">Marketing</button>
-      </section>
-
       <section class="cards">
-        <h2 hidden>Project Cards</h2>
-        <ul>
-          <li class="list project-card">
+        <h1 hidden>Portfolio</h1>
+        <ul class="list">
+          <button type="button" class="filter-button">All</button>
+          <button type="button" class="filter-button">Web Site</button>
+          <button type="button" class="filter-button">App</button>
+          <button type="button" class="filter-button">Design</button>
+          <button type="button" class="filter-button">Marketing</button>
+        </ul>
+
+        <ul class="list">
+          <li class="link project-card">
             <img
               src="./images/card1.jpg"
               alt="Banking App Interface Concept"
-              width="264"
+              width="360"
             />
-            <h3>Banking App Interface Concept</h3>
-            <p>App</p>
+            <h2 class="project-card-title">Banking App Interface Concept</h2>
+            <p class="project-card-text">App</p>
           </li>
-          <li class="list project-card">
-            <img src="./images/card2.jpg" alt="Cashless Payment" width="264" />
-            <h3>Cashless Payment</h3>
-            <p>Marketing</p>
+          <li class="link project-card">
+            <img src="./images/card2.jpg" alt="Cashless Payment" width="360" />
+            <h2 class="project-card-title">Cashless Payment</h2>
+            <p class="project-card-text">Marketing</p>
           </li>
-          <li class="list project-card">
-            <img src="./images/card3.jpg" alt="Meditation App" width="264" />
-            <h3>Meditation App</h3>
-            <p>App</p>
+          <li class="link project-card">
+            <img src="./images/card3.jpg" alt="Meditation App" width="360" />
+            <h2 class="project-card-title">Meditation App</h2>
+            <p class="project-card-text">App</p>
           </li>
-          <li class="list project-card">
-            <img src="./images/card4.jpg" alt="Taxi Service" width="264" />
-            <h3>Taxi Service</h3>
-            <p>Marketing</p>
+          <li class="link project-card">
+            <img src="./images/card4.jpg" alt="Taxi Service" width="360" />
+            <h2 class="project-card-title">Taxi Service</h2>
+            <p class="project-card-text">Marketing</p>
           </li>
-          <li class="list project-card">
+          <li class="link project-card">
             <img
               src="./images/card5.jpg"
               alt="Screen Illustrations"
-              width="264"
+              width="360"
             />
-            <h3>Screen Illustrations</h3>
-            <p>Designs</p>
+            <h2 class="project-card-title">Screen Illustrations</h2>
+            <p class="project-card-text">Designs</p>
           </li>
-          <li class="list project-card">
-            <img src="./images/card6.jpg" alt="Online Courses" width="264" />
-            <h3>Online Courses</h3>
-            <p>Marketing</p>
+          <li class="link project-card">
+            <img src="./images/card6.jpg" alt="Online Courses" width="360" />
+            <h2 class="project-card-title">Online Courses</h2>
+            <p class="project-card-text">Marketing</p>
           </li>
-          <li class="list project-card">
+          <li class="link project-card">
             <img
               src="./images/card7.jpg"
               alt="Instagram Stories Concept"
-              width="264"
+              width="360"
             />
-            <h3>Instagram Stories Concept</h3>
-            <p>Designs</p>
+            <h2 class="project-card-title">Instagram Stories Concept</h2>
+            <p class="project-card-text">Designs</p>
           </li>
-          <li class="list project-card">
-            <img src="./images/card8.jpg" alt="Organic Food" width="264" />
-            <h3>Organic Food</h3>
-            <p>Web Site</p>
+          <li class="link project-card">
+            <img src="./images/card8.jpg" alt="Organic Food" width="360" />
+            <h2 class="project-card-title">Organic Food</h2>
+            <p class="project-card-text">Web Site</p>
           </li>
-          <li class="list project-card">
-            <img src="./images/card9.jpg" alt="Fresh Coffee" width="264" />
-            <h3>Fresh Coffee</h3>
-            <p>Web Site</p>
+          <li class="link project-card">
+            <img src="./images/card9.jpg" alt="Fresh Coffee" width="360" />
+            <h2 class="project-card-title">Fresh Coffee</h2>
+            <p class="project-card-text">Web Site</p>
           </li>
         </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <a class="footer-logo link" href="./index.html">
-        <span class="footer-logo-accent">Web</span>Studio</a
+      <a class="footer-logo link" href="./index.html"
+        >Web <span class="footer-logo-accent">Studio</span></a
       >
       <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
