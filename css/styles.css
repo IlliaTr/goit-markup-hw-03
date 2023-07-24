@@ -17,11 +17,13 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1470px;
-  padding-left: 156px;
-  padding-right: 156px;
+  width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+img {
+  display: block;
 }
 
 p,
@@ -55,11 +57,26 @@ ol {
   list-style-type: none;
 }
 
-/* Header */
+/* ----------------Header---------------- */
 
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--cornflower);
+  background: var(--white);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 332px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -71,16 +88,11 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-logo-accent {
   color: var(--navyblue);
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 332px;
 }
 
 .header-menu {
@@ -88,16 +100,8 @@ ol {
   gap: 40px;
 }
 
-.header-navigation {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: space-between;
-}
-
-.header-address-items {
-  display: flex;
-  gap: 40px;
+.header-menu-item {
+  padding: 24px 0;
 }
 
 .header-menu-link {
@@ -119,6 +123,11 @@ ol {
   font-style: normal;
 }
 
+.header-address-items {
+  display: flex;
+  gap: 40px;
+}
+
 .header-address-link {
   color: var(--slate);
   font-size: 16px;
@@ -128,14 +137,11 @@ ol {
   text-decoration: none;
 }
 
-/* 1.Intro */
+/* ----------------1.Intro---------------- */
 
 .intro {
   background-color: var(--navyblue);
-}
-
-.intro-container {
-  padding: 188px 472px;
+  padding: 188px 0;
 }
 
 .intro-header {
@@ -145,26 +151,28 @@ ol {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+
   max-width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 
 .intro-button {
-  background: var(--iris);
+  background-color: var(--iris);
   font-family: var(--primary-font);
   color: var(--white);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   cursor: pointer;
-  padding: 16px 32px;
   border-radius: 4px;
   border: none;
-}
-
-.intro-button-position {
-  padding-left: 164px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
 }
 
 .intro-button:hover,
@@ -172,7 +180,7 @@ ol {
   background-color: var(--ocean);
 }
 
-/* 2.Advantages */
+/* ----------------2.Advantages---------------- */
 
 .visually-hidden {
   position: absolute;
@@ -207,7 +215,7 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .advantages-text {
   color: var(--slate);
@@ -216,7 +224,11 @@ ol {
   letter-spacing: 0.02em;
 }
 
-/* 3.What Are We Doing */
+/* ----------------3.What Are We Doing---------------- */
+
+.technology {
+  padding-bottom: 120px;
+}
 
 .subtitle {
   font-size: 36px;
@@ -226,13 +238,12 @@ ol {
   text-align: center;
   text-transform: capitalize;
   color: var(--navyblue);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .image-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .rectangle-image {
@@ -240,7 +251,7 @@ ol {
   border: 1px solid var(--cornflower);
 }
 
-/* 4.Team */
+/* ----------------4.Team---------------- */
 
 .end-body {
   background-color: var(--cloud);
@@ -254,6 +265,7 @@ ol {
 }
 
 .team-card {
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -262,16 +274,15 @@ ol {
 }
 
 .team-card-text {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
-/* Footer */
+/* ----------------Footer---------------- */
 
 .footer {
   background-color: var(--navyblue);
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -282,6 +293,9 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-accent {
@@ -296,14 +310,18 @@ ol {
   padding-top: 17.5px;
 }
 
-/* Portfolio Page */
+/* ----------------Portfolio Page---------------- */
+
+.cards {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .filter-container {
   display: flex;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  justify-content: center;
   gap: 24px;
-  padding-left: 271px;
+  margin-bottom: 72px;
 }
 
 .filter-button {
@@ -314,17 +332,21 @@ ol {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   cursor: pointer;
   padding: 12px 24px;
   border-radius: 4px;
-  border: none;
+  border: 1px solid var(--cornflower);
 }
 
 .filter-button:hover,
 .filter-button:focus {
   background: var(--ocean, #404bbf);
   color: var(--white);
+  border: 1px solid;
 }
+
+/* -----------------Cards Section----------------- */
 
 .project-card-list {
   display: flex;
@@ -334,8 +356,14 @@ ol {
 }
 
 .project-card {
-  border: 1px solid var(--cornflower);
   background: var(--white);
+  width: calc((100% - 48px) / 3);
+}
+
+.project-card-text {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
 }
 
 .project-card-title {
@@ -344,13 +372,12 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding: 32px 16px 8px;
+  margin-bottom: 8px;
 }
 
-.project-card-text {
+.project-card-option {
   color: var(--slate, #434455);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 8px 16px 32px;
 }
