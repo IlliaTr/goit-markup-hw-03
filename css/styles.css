@@ -16,6 +16,32 @@ body {
   background-color: var(--white);
 }
 
+.container {
+  width: 100%;
+  max-width: 1470px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin: 0 auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .link {
   text-decoration: none;
 }
@@ -31,6 +57,11 @@ body {
 
 /* Header */
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .header-logo {
   color: var(--iris);
   font-family: var(--secondary-font);
@@ -44,6 +75,29 @@ body {
 
 .header-logo-accent {
   color: var(--navyblue);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 332px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.header-address-items {
+  display: flex;
+  gap: 40px;
 }
 
 .header-menu-link {
@@ -80,6 +134,10 @@ body {
   background-color: var(--navyblue);
 }
 
+.intro-container {
+  padding: 188px 472px;
+}
+
 .intro-header {
   color: var(--white);
   text-align: center;
@@ -87,9 +145,11 @@ body {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
 
-.intro-btn {
+.intro-button {
   background: var(--iris);
   font-family: var(--primary-font);
   color: var(--white);
@@ -98,22 +158,47 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
 }
 
-.intro-btn:hover,
-.intro-btn:focus {
+.intro-button-position {
+  padding-left: 164px;
+}
+
+.intro-button:hover,
+.intro-button:focus {
   background-color: var(--ocean);
 }
 
 /* 2.Advantages */
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   margin: -1px;
   border: 0;
+  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .advantages-subtitle {
@@ -122,6 +207,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 .advantages-text {
   color: var(--slate);
@@ -140,20 +226,52 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--navyblue);
+  padding-bottom: 72px;
 }
+
+.image-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+.rectangle-image {
+  width: calc((100% - 24px * 2) / 3);
+  border: 1px solid var(--cornflower);
+}
+
+/* 4.Team */
 
 .end-body {
   background-color: var(--cloud);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-cards-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-card {
-  background-color: var(--white);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-card-text {
+  padding: 32px 16px;
+  text-align: center;
 }
 
 /* Footer */
 
 .footer {
   background-color: var(--navyblue);
+  padding-top: 101.5px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -174,9 +292,19 @@ body {
   color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  padding-top: 17.5px;
 }
 
 /* Portfolio Page */
+
+.filter-container {
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  gap: 24px;
+  padding-left: 271px;
+}
 
 .filter-button {
   font-family: var(--primary-font);
@@ -187,6 +315,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
 }
 
 .filter-button:hover,
@@ -195,12 +326,25 @@ body {
   color: var(--white);
 }
 
+.project-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  padding-bottom: 120px;
+}
+
+.project-card {
+  border: 1px solid var(--cornflower);
+  background: var(--white);
+}
+
 .project-card-title {
   color: var(--navyblue, #2e2f42);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding: 32px 16px 8px;
 }
 
 .project-card-text {
@@ -208,4 +352,5 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 8px 16px 32px;
 }
