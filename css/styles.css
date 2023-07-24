@@ -98,9 +98,6 @@ ol {
 .header-menu {
   display: flex;
   gap: 40px;
-}
-
-.header-menu-item {
   padding: 24px 0;
 }
 
@@ -343,7 +340,7 @@ ol {
 .filter-button:focus {
   background: var(--ocean, #404bbf);
   color: var(--white);
-  border: 1px solid;
+  border: 1px solid transparent;
 }
 
 /* -----------------Cards Section----------------- */
