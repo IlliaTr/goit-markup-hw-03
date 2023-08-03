@@ -170,6 +170,14 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
 }
 
 .intro-header {
@@ -181,7 +189,7 @@ ol {
   letter-spacing: 0.02em;
 
   max-width: 496px;
-  margin: 0 auto;
+  
   margin-bottom: 48px;
 }
 
@@ -449,7 +457,7 @@ ol {
   line-height: 1.5;
 }
 
-.icon-ellipse:hover {
+.social-link-footer {
   background-color: var(--ocean);
 }
 
@@ -646,10 +654,10 @@ ol {
 
 .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--navyblue)
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
+.modal-close-button:is(:hover, :focus) .modal-icon {
   fill: var(--white);
 }
 
