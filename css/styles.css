@@ -176,7 +176,6 @@ ol {
 .intro-container {
   display: flex;
   flex-direction: column;
-  gap: 48px;
   align-items: center;
 }
 
@@ -274,6 +273,8 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 8px 0;
+  background-color: #31d0aa;
 }
 
 /* ----------------3.What Are We Doing---------------- */
@@ -336,7 +337,6 @@ ol {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding-top: 8px;
 }
 
 .icon-ellipse {
@@ -562,7 +562,6 @@ ol {
   width: 100%;
 
   width: 360px;
-  height: 300px;
   flex-shrink: 0;
   padding: 40px 32px;
   transform: translateY(100%);
