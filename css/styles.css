@@ -842,6 +842,7 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
+  cursor: pointer;
 }
 
 .policy-link {
@@ -862,6 +863,7 @@ ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .modal-check:checked + .check-text span {
