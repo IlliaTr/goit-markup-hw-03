@@ -454,7 +454,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="social-footer-box">
           <p class="footer-social">Social media</p>
           <ul class="footer-social-block">
             <li class="list icon-ellipse">
@@ -507,6 +507,27 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p class="footer-social">Subscribe</p>
+          <div class="footer-subscribe-line">
+            <form class="footer-form">
+              <input
+                type="email"
+                name="footer-email"
+                class="footer-input"
+                placeholder="E-mail"
+                required
+              />
+              <label></label>
+            </form>
+            <button type="submit" class="footer-form-button">
+              Subscribe
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -518,6 +539,86 @@
             <use href="./images/icons.svg#icon-close-x"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="modal-field">
+            <label
+              ><span class="input-label-text">Name</span>
+              <span class="input-wrap">
+                <input
+                  type="text"
+                  name="user-name"
+                  class="modal-input"
+                  placeholder="Enter name"
+                  required
+                />
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label
+              ><span class="input-label-text">Phone</span>
+              <span class="input-wrap">
+                <input
+                  type="tel"
+                  name="user-tel"
+                  class="modal-input"
+                  placeholder="Enter phone"
+                  required
+                /><svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label
+              ><span class="input-label-text">Email</span>
+              <span class="input-wrap">
+                <input
+                  type="email"
+                  name="user-email"
+                  class="modal-input"
+                  placeholder="Enter email"
+                /><svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-text" class="input-label-text">Comment</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="user-terms"
+              id="user-terms"
+              value="one"
+              class="modal-check visually-hidden"
+            />
+            <label for="user-terms" class="check-text"
+              ><span
+                ><svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a href="" class="policy-link"> Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="intro-button">Send</button>
+        </form>
       </div>
     </div>
 
