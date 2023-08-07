@@ -843,6 +843,16 @@ ol {
   letter-spacing: 0.04em;
   color: var(--light-slate);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.check-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
 }
 
 .policy-link {
