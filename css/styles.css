@@ -848,8 +848,7 @@ ol {
 }
 
 .check-text span {
-  width: 16px;
-  height: 16px;
+  display: inline-flex;
 }
 
 .policy-link {
@@ -857,7 +856,6 @@ ol {
 }
 
 .check-text-icon {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
