@@ -835,9 +835,11 @@ ol {
 
 .modal-checkbox-field {
   margin-bottom: 24px;
+  line-height: 24px;
 }
 
 .check-text {
+  /* margin-bottom: 24px; */
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -874,8 +876,4 @@ ol {
 
 .modal-check:focus + .check-text span {
   border-color: var(--ocean);
-}
-
-.check-text {
-  margin-bottom: 24px;
 }
